@@ -34,7 +34,7 @@ public interface NasaDAO {
     List<MyNasaItem> getAllEntries();
 
     // Gets all entries in the database
-    @Query("SELECT * FROM NasaEntries WHERE description LIKE :queryString")
+    @Query("SELECT * FROM NasaEntries where description LIKE :queryString")
     List<MyNasaItem> getEntriesContaining(String queryString);
 
     @Query("SELECT COUNT(*) from NasaEntries")

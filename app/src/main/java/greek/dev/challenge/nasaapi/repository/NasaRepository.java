@@ -94,6 +94,7 @@ public class NasaRepository {
         new AsyncTask<Void, Void, List<MyNasaItem>>() {
             @Override
             protected List<MyNasaItem> doInBackground(Void... params) {
+               // return mNasaDAO.getAllEntries();
                 return mNasaDAO.getEntriesContaining(nasaQuery);
             }
 
@@ -130,7 +131,7 @@ public class NasaRepository {
         if (internetState) {
             return getItemsListFromWeb(query);
         }else{
-            return getItemsListFromDB(query);
+            return getItemsListFromDB("%"+query+"%");
         }
     }
 }

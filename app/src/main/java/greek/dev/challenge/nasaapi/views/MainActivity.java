@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
     @OnClick(R.id.search_button)
     public void startQuery(View view){
+        checkForInternet();
         viewModel.getMyNasaItemsList(searchEdit.getText().toString());
     }
     // Animation RecyclerView
@@ -161,6 +162,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
         viewModel.setInternetState( netInfo != null && netInfo.isConnectedOrConnecting());
-        viewModel.getMyNasaItemsList("apollo");
+        //viewModel.getMyNasaItemsList("apollo");
     }
 }
