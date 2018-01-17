@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nasa API</string>
+    <string name="search">Πάμε!</string>
+    <string name="query">Τι εικόνες ψάχνεις;</string>
+    <string name="share_text">Διάδωσε την εφαρμογή σε:</string>
+    <string name="empty_view">Δεν υπάρχουν αποτελέσματα</string>
+    <string name="share">Διαδώστε!</string>
+    <string name="goto_nasa">Επισκέψου το site της Nasa</string>
+</resources>

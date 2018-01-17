@@ -11,7 +11,6 @@
                 android:id="@+id/nav_goto_nasa"
                 android:icon="@drawable/ic_link_black_24dp"
                 android:title="@string/goto_nasa" />
-
         </menu>
     </item>
 </menu>

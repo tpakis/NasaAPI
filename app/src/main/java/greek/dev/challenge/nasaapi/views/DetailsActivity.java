@@ -20,13 +20,13 @@ import greek.dev.challenge.nasaapi.model.MyNasaItem;
  */
 
 public class DetailsActivity extends AppCompatActivity {
-    private MyNasaItem selectedItem;
     @BindView(R.id.title_photo)
     public TextView title;
     @BindView(R.id.image_photo)
     public ImageView image;
     @BindView(R.id.description_photo)
     public TextView description;
+    private MyNasaItem selectedItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,8 @@ public class DetailsActivity extends AppCompatActivity {
         selectedItem = intentStartedThisActivity.getExtras().getParcelable("item");
         setData(selectedItem);
     }
-    private void setData(MyNasaItem selectedItem){
+
+    private void setData(MyNasaItem selectedItem) {
         title.setText(selectedItem.getTitle());
         description.setText(selectedItem.getDescription());
         RequestOptions options = new RequestOptions()
@@ -52,7 +53,6 @@ public class DetailsActivity extends AppCompatActivity {
                 .placeholder(R.drawable.ic_public_black_24dp)
                 .error(R.mipmap.ic_launcher_round);
         Glide.with(image.getContext()).load(selectedItem.getImageLink()).apply(options).into(image);
-
 
     }
 }
