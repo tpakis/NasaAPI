@@ -4,7 +4,7 @@ This is a "toy-app" created for learning purposes and as a code repository for f
  google architecture components Room Library - LiveData - ViewModel and repository pattern with the help of popular libraries. The use of NASA public images api can be
  found at https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf
  
- [![](https://cdn-images-1.medium.com/max/1600/0*yly0KHFsJEPdxwUM.png)]()
+ [![](https://drive.google.com/file/d/1l1hgeGw06ep7p5eaXtN-j1pVGJUELTGy/view?usp=sharing)]()
 
 ## Built With
 
