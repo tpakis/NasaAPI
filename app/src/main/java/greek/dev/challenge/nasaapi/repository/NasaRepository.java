@@ -27,7 +27,7 @@ import retrofit2.Response;
  */
 
 public class NasaRepository {
-    private static NasaRepository mNasaRepository;
+    private static NasaRepository NASAREPOSITORY;
     //retrofit
     private NasaService mNasaService;
     //room
@@ -39,11 +39,10 @@ public class NasaRepository {
     }
 
     public synchronized static NasaRepository getInstance() {
-        //TODO  implement this singleton with Dagger2
-        if (mNasaRepository == null) {
-            mNasaRepository = new NasaRepository();
+        if (NASAREPOSITORY == null) {
+            NASAREPOSITORY = new NasaRepository();
         }
-        return mNasaRepository;
+        return NASAREPOSITORY;
     }
 
     public MutableLiveData<List<MyNasaItem>> getItemsListFromWeb(String nasaQuery) {

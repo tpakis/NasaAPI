@@ -8,15 +8,15 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class RetrofitClient {
 
-    private static Retrofit retrofit = null;
+    private static Retrofit INSTANSE = null;
 
     public static Retrofit getClient(String baseUrl) {
-        if (retrofit==null) {
-            retrofit = new Retrofit.Builder()
+        if (INSTANSE==null) {
+            INSTANSE = new Retrofit.Builder()
                     .baseUrl(baseUrl)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
-        return retrofit;
+        return INSTANSE;
     }
 }
