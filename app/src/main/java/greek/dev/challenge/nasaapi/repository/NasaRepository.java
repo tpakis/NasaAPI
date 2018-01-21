@@ -3,7 +3,6 @@ package greek.dev.challenge.nasaapi.repository;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +20,7 @@ import greek.dev.challenge.nasaapi.webservice.NasaUtils;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import timber.log.Timber;
 
 /**
  * Created by programbench on 1/14/2018.
@@ -81,7 +81,7 @@ public class NasaRepository {
 
             @Override
             public void onFailure(Call<NasaResponse> call, Throwable t) {
-                Log.v("main", t.getLocalizedMessage());
+                Timber.v( t.getLocalizedMessage());
             }
         });
 

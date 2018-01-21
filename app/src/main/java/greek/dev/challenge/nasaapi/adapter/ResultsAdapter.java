@@ -43,7 +43,6 @@ public class ResultsAdapter extends RecyclerView.Adapter<ResultsAdapter.ResultsH
     public void onBindViewHolder(ResultsHolder holder, int position) {
         MyNasaItem nasaItem = nasaItemsResults.get(position);
         holder.itemName.setText(nasaItem.getTitle());
-     //   holder.itemPhoto.layout(0,0,0,0);
         RequestOptions options = new RequestOptions()
                 .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
                 .centerCrop()

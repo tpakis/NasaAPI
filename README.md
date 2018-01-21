@@ -14,10 +14,10 @@ This is a "toy-app" created for learning purposes and as a code repository for f
 * [Room](https://developer.android.com/topic/libraries/architecture/room.html) - Sqlite abstraction layer 
 * [LiveData](https://developer.android.com/topic/libraries/architecture/livedata.html) - Observable data holder class
 * [Glide](https://github.com/bumptech/glide) - Images Loading and caching
+* [Timber](https://github.com/JakeWharton/timber) - Logging library
 * [Stetho](https://github.com/facebook/stetho) - debug bridge for Android applications
 
 Coming soon:
 * [Dagger2](https://github.com/google/dagger) - dependency injector for Android and Java
-* [Timber](https://github.com/JakeWharton/timber) - Logging library
 
 **Tsakiridis Thanos** 

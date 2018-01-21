@@ -10,6 +10,7 @@ import java.util.List;
 
 import greek.dev.challenge.nasaapi.model.MyNasaItem;
 import greek.dev.challenge.nasaapi.repository.NasaRepository;
+import timber.log.Timber;
 
 /**
  * Created by programbench on 1/14/2018.
@@ -39,7 +40,7 @@ public class MainListViewModel extends AndroidViewModel {
 
     public void setInternetState(boolean internetState) {
         this.internetState = internetState;
-        Log.v("main", String.valueOf(internetState));
+        Timber.v(String.valueOf(internetState));
     }
 
     public LiveData<List<MyNasaItem>> getItemsListObservable() {

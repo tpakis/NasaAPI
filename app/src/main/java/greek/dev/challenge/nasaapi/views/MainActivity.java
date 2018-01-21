@@ -37,6 +37,7 @@ import greek.dev.challenge.nasaapi.R;
 import greek.dev.challenge.nasaapi.adapter.ResultsAdapter;
 import greek.dev.challenge.nasaapi.model.MyNasaItem;
 import greek.dev.challenge.nasaapi.viewmodel.MainListViewModel;
+import timber.log.Timber;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, ResultsAdapter.NasaResultsAdapterOnClickHandler {
     @BindView(R.id.rv_results)
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
+        Timber.v("Hello!");
         //recyclerview
         mStaggeredGridLayoutManager = new StaggeredGridLayoutManager(3, 1);
         rvNasa.setLayoutManager(mStaggeredGridLayoutManager);
